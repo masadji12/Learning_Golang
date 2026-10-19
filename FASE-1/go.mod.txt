@@ -1,0 +1,16 @@
+// Menandai Direktori sebagai Modul GO
+// Tanpa file go.mod, Go tidak akan tahu bahwa folder tersebut adalah sebuah proyek Go yang valid. Perintah ini memberi tahu compiler Go untuk memperlakukan folder tersebut dan semua sub-foldernya sebagai satu kesatuan modul.
+
+// Mengelola Dependensi (Library Pihak Ketiga)
+// Di dalam file go.mod yang dihasilkan, Go akan mencatat semua library atau package luar yang proyek Anda gunakan beserta versi spesifiknya. Ini memastikan kode Anda tetap bisa berjalan dengan lancar di komputer lain tanpa takut ada masalah ketidakcocokan versi (dependency hell).
+
+// Memungkinkan Import Package Lokal
+// Jika proyek Anda memiliki beberapa folder internal, Anda membutuhkan nama modul dasar untuk melakukan import antar file sendiri.
+// • Contoh jika Anda menjalankan: go mod init myproject
+// • Anda bisa memanggil kode di folder internal lain dengan: import "myproject/controllers"
+
+// go mod init <name-modul>
+
+module level-1-first-program
+
+go 1.27.1

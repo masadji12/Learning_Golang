@@ -1,0 +1,34 @@
+# Untuk Teks & Umum (General
+%s (String)
+Mencetak teks biasa atau string
+Saat ingin memasukkan nama, kalimat, atau kata ke dalam teks
+
+%v (Value)
+Mencetak nilai variable dalam format bawaan (default) apa adanya
+Digunakan saat debug jika malas mengingat tipe datanya
+
+%+v (Struct Value dengan Field)
+Mencetak isi objek/struct lengkap dengan nama-nama kolomnya.
+Digunakan saat debugging data kompleks (seperti data dari database atau JSON)
+
+%T (Type)
+Mencetak tipe data dari variable tersebut (bukan nilainya).
+Digunakan saat ingin tahu apakah suatu variable itu berupa int, string, bool, float64 atau lain.
+
+
+# Untuk Angka (Numbers)
+%d (Decimal)
+Mencetak angka bulat berbasis 10 (integer)
+Untuk jumlah barang, umur, hasil penjumlahan, ID dan semua angka bulat tanpa koma.
+
+%f (Float)
+Mencetak angka pecahan atau decimal (float)
+Untuk nilai IPK, tinggi badan atau hasil pembagian yang menghasilkan koma.
+
+%t (Boolean)
+Mencetak nilai true atau false
+Untuk status logika, seperti isLoggedIn atau isActive.
+
+fmt.Println(): Gunakan jika hanya ingin mencetak teks biasa yang otomatis berpindah baris baru di akhir. tidak bisa membaca kode like %b
+fmt.Printf(): Gunakan jika ingin menyusun kalimat yang nilainya dinamis menggunakan kode, %d, %s, dll
+fmt.Sprintf(): Sama seperti Printf, tetapi fungsinya bukan untuk cetak ke layer, melainkan untuk disimpan ke dalam variable string baru.

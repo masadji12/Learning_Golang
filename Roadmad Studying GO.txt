@@ -1,0 +1,117 @@
+# ROADMAP STUDY GOLANG
+## Fase 1 -- Environtment & Fundamental
+Level 1-4 : Persiapan, syntax, variable, operator, dan control flow. (Dasar GOLANG)
+Level 1 — Installation & Development Environment
+- Pengertian GOLANG di backend.
+- Instalasi GO 
+- Understanding go version, go env, dan go help.
+- Instalasi dan konfigurasi VS Code.
+- Menjalankan program pertama.
+- Memahami go run, go build, dan go mod init.
+- Mampu membuat dan menjalan project GO.
+
+Level 2 — Syntax & Program Structure
+- Struktur program dan package main.
+- fungsi main().
+- Import package dan penggunaan fmt.
+- Statement, expression, komentar, dan code formatting.
+- Memahami compiler dan error syntax.
+- Memahami struktur dasar file GO.
+
+Level 3 — Variables, Constants & Data Types
+- Deklarasi var dan const.
+- short declaration :=.
+- Tipe data in, float64, string, bool.
+- Zero values dan type conversion.
+- fmt.Printf, format specifier, dan input sederhana.
+- mampu mengolah data dan memahami tipe data.
+
+Level 4 — Operators & Control Flow
+- Arithmetic: +, -, *, /, %.
+- Comparison: ==, !=, >, <, >=, <=.
+- Logical: &&, ||, !.
+- Assignment, increment, dan decrement.
+- if, else if, else.
+- switch, for, break, continue.
+- Nested condition dan nested loop.
+- Mampu membuat program kalkulasi dan logika bisnis sederhana
+
+## Fase 2 -- Core Go Programming
+Level 5-9 : Function, Collection, Struct, Pointer, Interface, error, dan package. (Logika Pemrograman)
+- Functions, parameters, return values, multiple returns, variadic functions.
+- Array, Slice, Map, range, sorting, searching.
+- Struct, methods, pointer, value vs pointer receiver.
+- Interface, composition, embedding, polymorphism.
+- Error handling, defer, panic, recover, package, module, visibility.
+
+Note:
+- Memahami perbedaan array dan slice.
+- Memahami pointer tanpa harus langsung menguasai manajemen memori tingkat lanjut.
+- Memahami konsep pass-by-value di Go.
+- Menggunakan errors.New, fmt.Errorf, dan errors.Is.
+- Memecah kode ke dalam beberapa package.
+
+## Fase 3 -- Backend Fundamentals
+Level 10-12 : File, JSON, HTTP, REST API, concurrency, dan testing. (Backend without Framework)
+- Level 10 - File handling, JSON, serialization, environment variables, configuration
+- Level 11 - HTTP, request/response, routing, middleware, REST API, status code
+- Level 12 - Goroutine, channel, mutex, context, unit testing, table-driven tests
+
+Note:
+- Memahami HTTP methods: GET, POST, PUT, PATCH, dan DELETE.
+- Memahami HTTP status codes seperti 200, 201, 400, 401, 404, dan 500.
+- Mengolah request body JSON dan menghasilkan response JSON.
+- Memahami middleware untuk logging, recovery, dan autentikasi.
+- Menguji endpoint menggunakan Postman.
+- Memahami dasar concurrency Go tanpa harus langsung mempelajari pola yang kompleks.
+
+## Fase 4 -- Framework & Database
+Level 13-16 : GIN, PostgreSQL, ORM, authentication, dan arshitektur project. (REST API production style)
+Level 13 — Memilih framework Go
+- Mempelajari Framework Utama menggunakan Framework GIN karena cocok untuk pembelajaran REST API dan relative mudah digunakan.
+
+Level 14 — PostgreSQL & Database Integration
+- Koneksi PostgreSQL menggunakan Go.
+- Memahami database/sql dan driver PostgreSQL.
+- CRUD: Create, Read, Update, Delete.
+- Query parameter dan prepared statements.
+- Relasi tabel dan foreign key.
+- Transactions, rollback, dan commit.
+- Connection pooling dan context timeout.
+- Database migration.
+- Memahami ORM seperti GORM setelah menguasai query SQL dasar.
+
+Level 15 — Authentication & Authorization
+- Password hashing menggunakan bcrypt.
+- Register dan login.
+- JWT access token.
+- Middleware authentication.
+- Role-based access control (RBAC).
+- Validasi input dan sanitasi data.
+- CORS, secrets, dan pengamanan konfigurasi.
+- Pagination, filtering, dan sorting.
+
+Level 16 — Backend Architecture
+- Separation of concerns.
+- Handler/controller, service, repository, dan model.
+- Dependency injection.
+- DTO/request/response structures.
+- Validasi bisnis dan error handling terpusat.
+- Logging dan konfigurasi environment.
+- Unit testing dan integration testing.
+
+## Fase 5 -- Professional Backend
+Level 17-19 : Security, Docker, deployment, dan project akhir.
+- Advanced testing, mocks, benchmarks, race detector, profiling
+- Docker, Docker Compose, environment management, CI/CD, deployment, Redis.
+- Capstone project: Web Master Data ATK
+
+## The Stack to be used
+Language Backend => GOLANG
+Framework => GIN
+Database => PostgreSQL
+Database Access => database/sql + PostgreSQL driver, lalu evaluasi GORM
+API testing => Postman
+Version Control => GIT + GITHUB
+Container => Docker + Docker Compose
+Code editor => VS Code
