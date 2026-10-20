@@ -2,55 +2,34 @@ package main
 
 import "fmt"
 
-type Category struct {
-	Name	string
-}
-
 type Product struct {
 	Name	string
+	Price 	int
 	Stock	int
-	Category
-}
-
-type Supplier struct {
-	Name	string
-	Telephone	string
-}
-
-func (p Product) DisplayInfo() {
-	fmt.Println("Name:", p.Name)
-	fmt.Println("Stock:", p.Stock)
-	fmt.Println("Category:", p.Category.Name)
-}
-
-func (s Supplier) DisplayInfo() {
-	fmt.Println("Name:", s.Name)
-	fmt.Println("Telephone:", s.Telephone)
-}
-
-type Informer interface{
-	DisplayInfo()
-}
-
-func printInfo(item Informer) {
-	item.DisplayInfo()
 }
 
 func main() {
-	product := Product{
-		Name: "Pensil",
-		Stock: 100,
-		Category: Category{
-			Name: "Alat Tulis",
-		},
-	}
+	var products [3]Product
 
-	supplier := Supplier{
-		Name: "Yanto",
-		Telephone: "089089789854",
-	}
+    products[0] = Product{
+        Name:  "Pulpen",
+        Price: 3000,
+        Stock: 100,
+    }
 
-	printInfo(product)
-	fmt.Println("----")
-	printInfo(supplier)
+    products[1] = Product{
+        Name:  "Buku",
+        Price: 5000,
+        Stock: 50,
+    }
+
+    products[2] = Product{
+        Name:  "Penghapus",
+        Price: 2000,
+        Stock: 75,
+    }
+
+	for i, product := range products {
+		fmt.Println(i + 1, product.Name, product.Price, product.Stock)
+	}
 }

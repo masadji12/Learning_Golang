@@ -12,7 +12,7 @@ func (c Category) DisplayCategory() {
 
 type Product struct {
     Name string
-    Category
+    Category // embedding
 }
 
 func main() {
