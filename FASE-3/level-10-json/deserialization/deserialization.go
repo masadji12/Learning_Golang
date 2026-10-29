@@ -10,7 +10,8 @@ func Deserialization() {
 	jsonData := []byte(`{
 		"id": 1,
 		"name": "Pulpen",
-		"stock": 100
+		"stock": 100,
+		"price": 5000
 	}`)
 
 	var product models.Product

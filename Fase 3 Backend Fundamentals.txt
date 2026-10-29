@@ -1,0 +1,30 @@
+## Fase 3 -- Backend Fundamentals
+Level 10-12 : File, JSON, HTTP, REST API, concurrency, dan testing. (Backend without Framework)
+- Level 10 - File handling, JSON, serialization, environment variables, configuration
+- Level 11 - HTTP, request/response, routing, middleware, REST API, status code
+- Level 12 - Goroutine, channel, mutex, context, unit testing, table-driven tests
+
+Note:
+- Memahami HTTP methods: GET, POST, PUT, PATCH, dan DELETE.
+- Memahami HTTP status codes seperti 200, 201, 400, 401, 404, dan 500.
+- Mengolah request body JSON dan menghasilkan response JSON.
+- Memahami middleware untuk logging, recovery, dan autentikasi.
+- Menguji endpoint menggunakan Postman.
+- Memahami dasar concurrency Go tanpa harus langsung mempelajari pola yang kompleks.
+
+HTTP & REST API - tanpa framework
+- HTTP server menggunakan net/HTTP
+- Request dan response
+- Routing dan http methods
+- Status code: 200, 201, 400, 401, 404, 500
+- JSON request body dan JSON response
+- Middleware: logging, recovery, authentication
+- Testing endpoint menggunakan postman
+
+Concurrency & testing
+- Goroutine
+- channel
+- Mutex dan race condition
+- Context dan pembatalan proses
+- Unit testing dengan testing
+- Table-driven tests
