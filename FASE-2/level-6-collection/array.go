@@ -36,7 +36,7 @@ func main() {
 
 	// Merge array with for
 	for i := 0; i <= len(sizes) - 1; i++ {
-		if sizes[1]  {
+		if sizes[1] == 100 {
 		}
 		fmt.Println("Index:", i, "| Sizes:", sizes[i])
 	}

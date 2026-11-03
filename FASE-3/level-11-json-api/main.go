@@ -7,17 +7,17 @@ import (
 )
 
 type Product struct {
-	ID		int 	`json:"id"`
-	Name	string	`json:"name"`
-	Price	float64	`json:"price"`
-	Stock	int		`json:"stock"`
+	ID    int     `json:"id"`
+	Name  string  `json:"name"`
+	Price float64 `json:"price"`
+	Stock int     `json:"stock"`
 }
 
 // Temporary storage in memory (Penyimpan sementara di memori)
 var products []Product
 var nextID = 1
 
-func productsHandler(w http.ResponseWriter, r * http.Request) {
+func productsHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 
 	switch r.Method {
@@ -28,7 +28,7 @@ func productsHandler(w http.ResponseWriter, r * http.Request) {
 		if err := json.NewEncoder(w).Encode(products); err != nil {
 			fmt.Println("Error encoding products:", err)
 		}
-		
+
 	case http.MethodPost:
 		// POST: menerima JSON dari request body
 		var newProduct Product
@@ -78,7 +78,7 @@ func productsHandler(w http.ResponseWriter, r * http.Request) {
 	}
 }
 
-func main () {
+func main() {
 	http.HandleFunc("/products", productsHandler)
 
 	fmt.Println("Server running at http://localhost:8080")
