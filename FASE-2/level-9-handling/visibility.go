@@ -20,4 +20,3 @@ func DisplayProduct() string {
 func calculateStock() int {
 	return stock
 }
-

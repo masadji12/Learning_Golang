@@ -8,8 +8,8 @@ func main() {
 	// LITERAL MAP
 	fmt.Println("=== LITERAL MAP ===")
 	stocks := map[string]int{
-		"Pulpen": 100,
-		"Buku": 50,
+		"Pulpen":    100,
+		"Buku":      50,
 		"Penghapus": 75,
 	}
 
@@ -22,7 +22,7 @@ func main() {
 	fmt.Println("\n=== CREATE ===")
 	stock["Pulpen"] = 100
 	stock["Buku"] = 50
-	
+
 	fmt.Println(stock)
 
 	// READ
@@ -30,7 +30,7 @@ func main() {
 	fmt.Println(stock["Pulpen"])
 
 	for name, total := range stock {
-		fmt.Printf("%s %d\n",name, total)
+		fmt.Printf("%s %d\n", name, total)
 	}
 
 	// HOW TO IF THE KEY NOT FOUND
@@ -51,6 +51,6 @@ func main() {
 
 	fmt.Println(stock["Pulpen"])
 
-	// DELETE 
+	// DELETE
 	delete(stock, "Buku")
 }

@@ -35,14 +35,14 @@ func main() {
 	}
 
 	// for range seperti for each
-	products := []string {
+	products := []string{
 		"Pulpen",
 		"Buku",
 		"Pensil",
 	}
 
 	for index, product := range products {
-		fmt.Printf("Index Ke-%d is %s\n",index, product)
+		fmt.Printf("Index Ke-%d is %s\n", index, product)
 	}
 
 	// If you dont need it index
@@ -56,7 +56,7 @@ func main() {
 	for _, category := range categories {
 		fmt.Println("Category:", category)
 
-		for i := 1; i<= 2; i++ {
+		for i := 1; i <= 2; i++ {
 			fmt.Println("Item ke-", i)
 		}
 	}

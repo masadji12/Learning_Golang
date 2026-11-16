@@ -9,7 +9,7 @@ func main() {
 		if r := recover(); r != nil {
 			fmt.Println("Panic successfully handled:", r)
 		}
-	} ()
+	}()
 
 	fmt.Println("Start Process")
 

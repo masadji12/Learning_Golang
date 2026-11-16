@@ -1,35 +1,77 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sync"
+	"time"
+)
 
-type Product struct {
-	Name	string
-	Price 	int
-	Stock	int
+func processProduct(wg *sync.WaitGroup, ch chan string) {
+	// Done mengurangi counter WaitGroup sebanyak 1
+	// Defer memastikan Done() dipanggil saat fungsi selesai
+	defer wg.Done()
+
+	fmt.Println("Product processing started")
+
+	time.Sleep(1 * time.Second)
+
+	ch <- "Product processing completed"
+}
+
+func processOrder(wg *sync.WaitGroup, ch chan string) {
+	// Done untuk mengurangi counter WaitGroup sebanyak 1
+	// Defer untuk memastikan Done() dipanggil saat fungsi selesai
+	defer wg.Done()
+
+	fmt.Println("Order processing started")
+
+	// Menghentikan sementara goroutine selama 1 detik
+	time.Sleep(1 * time.Second)
+
+	// Mengirim pensan ke channel
+	ch <- "Order processing completed"
+}
+
+func processStock(wg *sync.WaitGroup, ch chan string) {
+	// Done untuk mengurangi counter WaitGroup sebanyak 1
+	// Defer untuk memastikan Done() dipanggil saat fungsi selesai
+	defer wg.Done()
+
+	fmt.Println("Stock processing started")
+
+	// Menghentikan sementara goroutine selama 1 detika
+	time.Sleep(1 * time.Second)
+
+	// Mengirin pesan ke channel
+	ch <- "Stock processing completed"
 }
 
 func main() {
-	var products [3]Product
+	// Membuat WaitGroup untuk mengatur goroutine
+	var wg sync.WaitGroup
 
-    products[0] = Product{
-        Name:  "Pulpen",
-        Price: 3000,
-        Stock: 100,
-    }
+	// Membuat buffered channel dengan 3 kapasitas
+	// Channel ini dapat menampung maksimal 3 pesan sebelum dibaca
+	ch := make(chan string, 3)
 
-    products[1] = Product{
-        Name:  "Buku",
-        Price: 5000,
-        Stock: 50,
-    }
+	// Mendaftarkan ketiga pekerjaan ke WaitGroup
+	wg.Add(3)
 
-    products[2] = Product{
-        Name:  "Penghapus",
-        Price: 2000,
-        Stock: 75,
-    }
+	// Menjalankan ketiga fungsi secara bersamaan menggunakan goroutine
+	go processProduct(&wg, ch)
+	go processOrder(&wg, ch)
+	go processStock(&wg, ch)
 
-	for i, product := range products {
-		fmt.Println(i + 1, product.Name, product.Price, product.Stock)
+	// Menunggu sampa goroutine selesai semua
+	wg.Wait()
+
+	// Menandakan bahwa tidak ada lagi data yang akan dikirim kechannel
+	close(ch)
+
+	// range membaca setiap pesan dari channel sampai ditutup
+	for message := range ch {
+		fmt.Println(message)
 	}
+
+	fmt.Println("All backend tasks completed")
 }

@@ -5,14 +5,14 @@ import "fmt"
 func main() {
 	// LITERAL MAP
 	stock := map[string]int{
-		"Pulpen": 100,
-		"Buku": 50,
+		"Pulpen":    100,
+		"Buku":      50,
 		"Penghapus": 75,
 	}
 
 	// CREATE
 	stock["Pensil"] = 60
-	
+
 	// READ
 	fmt.Println(stock["Pulpen"])
 	fmt.Println("")

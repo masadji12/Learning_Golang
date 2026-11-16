@@ -22,7 +22,7 @@ func productsHandler(w http.ResponseWriter, r *http.Request) {
 	// 3. Buat map untuk menyimpan response
 	response := map[string]string{
 		"message": "Product list retrieved successfully",
-		"status": "success",
+		"status":  "success",
 	}
 
 	// 4. Encode data Go menjadi JSON dan kirim ke client

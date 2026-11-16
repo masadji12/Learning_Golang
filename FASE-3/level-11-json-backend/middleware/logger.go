@@ -2,7 +2,7 @@ package middleware
 
 import (
 	"log" // To record app information (Untuk mencatat informasi applikasi)
-	"net/http" 
+	"net/http"
 	"time"
 )
 

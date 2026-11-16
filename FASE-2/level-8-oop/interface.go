@@ -11,7 +11,7 @@ type Informer interface {
 }
 
 type Product struct {
-	Name string
+	Name  string
 	Price int
 	Stock int
 }
@@ -24,7 +24,7 @@ func (p Product) DisplayInfo() {
 
 func main() {
 	product := Product{
-		Name: "Pulpen",
+		Name:  "Pulpen",
 		Price: 3000,
 		Stock: 100,
 	}

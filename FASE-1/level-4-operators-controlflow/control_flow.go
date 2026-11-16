@@ -13,7 +13,7 @@ import "fmt"
 
 func main() {
 	isActive := true
-	stock := 10 
+	stock := 10
 	requestedQty := 5
 
 	// if

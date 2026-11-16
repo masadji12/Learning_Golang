@@ -14,4 +14,4 @@ func setupRoutes() *http.ServeMux {
 	mux.HandleFunc("GET /products", handlers.GetProducts)
 	mux.HandleFunc("POST /products", handlers.CreateProduct)
 	return mux
-}	
+}

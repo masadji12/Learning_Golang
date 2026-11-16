@@ -20,7 +20,7 @@ func main() {
 	// fmt.Println("3. SEGITIGA SAMA KAKI UTUH:")
 	// cetakSegitigaUtuh(tinggi)
 	// fmt.Println()
-	
+
 	// fmt.Println("4. SEGITIGA SAMA KAKI TERBALIK UTUH:")
 	// cetakSegitigaUtuhTerbalik(tinggi)
 }
@@ -95,10 +95,10 @@ func two(n int) {
 
 func three(n int) {
 	for i := 1; i <= n; i++ {
-		for j := 1; j <= n - i; j++ {
+		for j := 1; j <= n-i; j++ {
 			fmt.Print(" ")
 		}
-		for k := 1; k <= (2 * i - 1); k++ {
+		for k := 1; k <= (2*i - 1); k++ {
 			fmt.Print("*")
 		}
 		fmt.Println()
@@ -107,10 +107,10 @@ func three(n int) {
 
 func four(n int) {
 	for i := n - 1; i >= 1; i-- {
-		for j := 1; j <= n - i; j++ {
+		for j := 1; j <= n-i; j++ {
 			fmt.Print(" ")
 		}
-		for k := 1; k <= (2 * i -1); k++ {
+		for k := 1; k <= (2*i - 1); k++ {
 			fmt.Print("*")
 		}
 		fmt.Println()

@@ -5,21 +5,21 @@ import (
 )
 
 func main() {
-	categories := [3]string {
+	categories := [3]string{
 		"Alat Tulis",
 		"Kertas",
 		"Perlengkap IT",
 	}
 
-	products := []string {
+	products := []string{
 		"Pulpen",
 		"Buku",
 		"Pensil",
 	}
 
-	stocks := map[string]int {
+	stocks := map[string]int{
 		"Pulpen": 20,
-		"Buku": 15,
+		"Buku":   15,
 		"Pensil": 30,
 	}
 

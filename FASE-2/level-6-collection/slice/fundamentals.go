@@ -5,7 +5,7 @@ package main
 import "fmt"
 
 func main() {
-	atks := []string {
+	atks := []string{
 		"Pulpen",
 		"Buku",
 		"Penghapus",
@@ -19,7 +19,7 @@ func main() {
 
 	// READ: Menampilkan dengan loop
 	for index, name := range atks {
-		fmt.Println(index + 1, name)
+		fmt.Println(index+1, name)
 	}
 
 	// CREATE/ADD

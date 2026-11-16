@@ -7,7 +7,7 @@ import "fmt"
 func main() {
 	stocks := map[string]int{
 		"Pulpen": 20,
-		"Buku": 15,
+		"Buku":   15,
 		"Pensil": 30,
 	}
 
@@ -15,7 +15,7 @@ func main() {
 	fmt.Println("Stok buku:", stocks["Buku"])
 
 	stocks["Penggaris"] = 12 // Create new data
-	stocks["Pulpen"] = 25 // Update data
+	stocks["Pulpen"] = 25    // Update data
 
 	delete(stocks, "Buku") // Delete data
 

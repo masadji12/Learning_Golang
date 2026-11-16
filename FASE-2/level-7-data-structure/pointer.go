@@ -10,7 +10,7 @@ import (
 )
 
 type Product struct {
-	Name string
+	Name  string
 	Price int
 	Stock int
 }
@@ -18,7 +18,6 @@ type Product struct {
 // Value receiver
 func (p Product) ReduceStockValue() {
 	p.Stock -= 10
-	fmt.Println("Stock in method ReduceStockValue:", p.Stock)
 }
 
 // Pointer receiver
@@ -37,7 +36,7 @@ func main() {
 
 	// Implementation Pointer
 	product := Product{
-		Name: "Pulpen",
+		Name:  "Pulpen",
 		Price: 3000,
 		Stock: 100,
 	}

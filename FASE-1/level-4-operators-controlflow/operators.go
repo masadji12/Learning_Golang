@@ -8,11 +8,11 @@ func main() {
 	a := 10
 	b := 3
 
-	fmt.Println("Penjumlahan:", a + b)
-	fmt.Println("Pengurangan:", a - b)
-	fmt.Println("Pembagian:", a / b)
-	fmt.Println("Perkalian:", a * b)
-	fmt.Println("Sisa Bagi:", a % b)
+	fmt.Println("Penjumlahan:", a+b)
+	fmt.Println("Pengurangan:", a-b)
+	fmt.Println("Pembagian:", a/b)
+	fmt.Println("Perkalian:", a*b)
+	fmt.Println("Sisa Bagi:", a%b)
 
 	stock := 100
 	sold := 15

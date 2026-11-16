@@ -7,8 +7,8 @@ type Informer interface {
 }
 
 type Product struct {
-	Name	string
-	Stock	int
+	Name  string
+	Stock int
 }
 
 func (p Product) DisplayInfo() {
@@ -17,8 +17,8 @@ func (p Product) DisplayInfo() {
 }
 
 type Supplier struct {
-	Name 	string
-	Phone 	string
+	Name  string
+	Phone string
 }
 
 func (s Supplier) DisplayInfo() {
@@ -33,12 +33,12 @@ func printInfo(item Informer) {
 
 func main() {
 	product := Product{
-		Name: "Pulpen",
+		Name:  "Pulpen",
 		Stock: 100,
 	}
 
 	supplier := Supplier{
-		Name: "PT ATK Jaya",
+		Name:  "PT ATK Jaya",
 		Phone: "085965895803",
 	}
 

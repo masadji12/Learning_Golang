@@ -19,7 +19,7 @@ func main() {
 	// RANGE IN MAP
 	stocks := map[string]int{
 		"Pulpen": 20,
-		"Buku": 15,
+		"Buku":   15,
 		"Pensil": 30,
 	}
 

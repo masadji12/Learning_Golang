@@ -18,7 +18,7 @@ func main() {
 	// Read
 	fmt.Println(atks)
 	for i, atk := range atks {
-		fmt.Println(i + 1, atk)
+		fmt.Println(i+1, atk)
 	}
 
 	// Edit

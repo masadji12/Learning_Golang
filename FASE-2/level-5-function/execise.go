@@ -24,8 +24,8 @@ func main() {
 	products := []string{"Pulpen", "Kertas", "Penggaris"}
 
 	stocks := map[string]int{
-		"Pulpen": 20,
-		"Kertas": 30,
+		"Pulpen":    20,
+		"Kertas":    30,
 		"Penggaris": 50,
 	}
 

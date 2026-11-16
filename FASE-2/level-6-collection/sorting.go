@@ -8,7 +8,7 @@ import (
 
 func main() {
 	// SORTING SLICE NUMBER
-	stocks := []int{30, 10, 50, 20 ,40}
+	stocks := []int{30, 10, 50, 20, 40}
 
 	sort.Ints(stocks) // Di urutkan langsung, bukan langsung menghasilkan slice baru.
 

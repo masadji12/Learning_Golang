@@ -56,6 +56,20 @@ Level 10-12 : File, JSON, HTTP, REST API, concurrency, dan testing. (Backend wit
 - Level 10 - File handling, JSON, serialization, environment variables, configuration
 - Level 11 - HTTP, request/response, routing, middleware, REST API, status code
 - Level 12 - Goroutine, channel, mutex, context, unit testing, table-driven tests
+    -   Goroutine
+        Memahami concurrency, membuat goroutine, dan menjalankan beberapa proses secara bersamaan.
+    -   Channel
+        Komunikasi dan pertukaran data antar-goroutine menggunakan channel.
+    -   Mutex & Race condition
+        Melindungi shared data, memahami sync.Mutex, sync.RWMutex, dan mendeteksi race condition.
+    -   Context
+        Mengelola timeout, cancellation, dan lifecycle sebuah request HTTP
+    -   Unit Testing
+        Menggunakan package testing, membuat test function, dan menguji fungsi backend.
+    -   Table Driven Tests
+        Menguji berbagai skenario menggunakan kumpulan test cases.
+    -   HTTP Handler Testing
+        Menguji endpoint GET, POST, PUT, PATCH, dan DELETE menggunakan httptest.
 
 Note:
 - Memahami HTTP methods: GET, POST, PUT, PATCH, dan DELETE.

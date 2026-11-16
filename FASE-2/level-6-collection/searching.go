@@ -7,7 +7,7 @@ import (
 
 func main() {
 	// LINEAR SEARCH
-	products := []string {
+	products := []string{
 		"Pulpen",
 		"Buku",
 		"Pensil",
@@ -19,7 +19,7 @@ func main() {
 
 	for i, product := range products {
 		if product == target {
-			foundIndex = i 
+			foundIndex = i
 			break
 		}
 	}
@@ -52,7 +52,7 @@ func main() {
 	foundIndexUseFor := -1
 
 	for left <= right {
-		mid := left + (right - left) / 2
+		mid := left + (right-left)/2
 
 		if numbers[mid] == targetUseFor {
 			foundIndexUseFor = mid

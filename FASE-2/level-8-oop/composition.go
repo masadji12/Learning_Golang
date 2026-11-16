@@ -11,15 +11,15 @@ type Category struct {
 }
 
 type Product struct {
-	Name	string
-	Price 	int
-	Stock 	int
+	Name     string
+	Price    int
+	Stock    int
 	Category Category
 }
 
 func main() {
 	product := Product{
-		Name: "Pulpen",
+		Name:  "Pulpen",
 		Price: 3000,
 		Stock: 100,
 		Category: Category{
